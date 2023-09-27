@@ -15,4 +15,12 @@ public class HiddenObject : MonoBehaviour
     {
         
     }
+
+    void OnMouseDown()
+    {
+        //Check object off of list
+        GameManager.Instance.objectList.Remove(this);
+        //Destroy Object or Make inactive
+        this.gameObject.SetActive(false);
+    }
 }
