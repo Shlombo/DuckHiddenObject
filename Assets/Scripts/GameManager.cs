@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
 
     public static GameManager Instance { get; private set; }
 
+    bool done = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +19,11 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
+        if(objectList.Count <= 0 && !done) {
+            Debug.Log("Yippee");
+            done = true;
+        }
     }
 
     void Awake() 

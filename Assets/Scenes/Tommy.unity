@@ -319,6 +319,17 @@ PrefabInstance:
       objectReference: {fileID: 768508448}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ce55cd592166304ba3f4a674e7df933, type: 3}
+--- !u!114 &244009295 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5319960289055739641, guid: 9ce55cd592166304ba3f4a674e7df933, type: 3}
+  m_PrefabInstance: {fileID: 244009294}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5de4368d08e1594a91be2add2a482d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &622404289
 GameObject:
   m_ObjectHideFlags: 0
@@ -995,6 +1006,17 @@ PrefabInstance:
       objectReference: {fileID: 1385701967}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ce55cd592166304ba3f4a674e7df933, type: 3}
+--- !u!114 &1448827591 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5319960289055739641, guid: 9ce55cd592166304ba3f4a674e7df933, type: 3}
+  m_PrefabInstance: {fileID: 1448827590}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5de4368d08e1594a91be2add2a482d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1578753970
 GameObject:
   m_ObjectHideFlags: 0
@@ -1275,6 +1297,17 @@ PrefabInstance:
       objectReference: {fileID: 2044424147}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ce55cd592166304ba3f4a674e7df933, type: 3}
+--- !u!114 &1845019150 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5319960289055739641, guid: 9ce55cd592166304ba3f4a674e7df933, type: 3}
+  m_PrefabInstance: {fileID: 1845019149}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5de4368d08e1594a91be2add2a482d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1977183154 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5319960289055739641, guid: 9ce55cd592166304ba3f4a674e7df933, type: 3}
@@ -1596,7 +1629,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9081868388726736846, guid: c128bbe065e0beb40a477e89f5173b44, type: 3}
       propertyPath: objectList.Array.size
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 9081868388726736846, guid: c128bbe065e0beb40a477e89f5173b44, type: 3}
       propertyPath: objectList.Array.data[0]
@@ -1606,6 +1639,18 @@ PrefabInstance:
       propertyPath: objectList.Array.data[1]
       value: 
       objectReference: {fileID: 1213101184}
+    - target: {fileID: 9081868388726736846, guid: c128bbe065e0beb40a477e89f5173b44, type: 3}
+      propertyPath: objectList.Array.data[2]
+      value: 
+      objectReference: {fileID: 1448827591}
+    - target: {fileID: 9081868388726736846, guid: c128bbe065e0beb40a477e89f5173b44, type: 3}
+      propertyPath: objectList.Array.data[3]
+      value: 
+      objectReference: {fileID: 1845019150}
+    - target: {fileID: 9081868388726736846, guid: c128bbe065e0beb40a477e89f5173b44, type: 3}
+      propertyPath: objectList.Array.data[4]
+      value: 
+      objectReference: {fileID: 244009295}
     - target: {fileID: 9081868388726736847, guid: c128bbe065e0beb40a477e89f5173b44, type: 3}
       propertyPath: m_Name
       value: GameManager
