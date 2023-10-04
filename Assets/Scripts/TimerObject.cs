@@ -8,7 +8,7 @@ public class TimerObject : MonoBehaviour
     
     float startTime;
 
-    float currentTime;
+    public float currentTime = 1;
 
     public float levelTime;
 

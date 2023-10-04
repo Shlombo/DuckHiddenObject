@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,7 +11,9 @@ public class GameManager : MonoBehaviour
 
     public TimerObject timer;
 
-    bool done = false;
+    public static int currentLevel = 1;
+
+    public int test;
 
     // Start is called before the first frame update
     void Start()
@@ -21,10 +24,23 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        if(objectList.Count <= 0 && !done) {
+        test = currentLevel;
+        if(objectList.Count <= 0) {
+            currentLevel += 1;
             Debug.Log("Yippee");
-            done = true;
+            if(currentLevel == 2){
+                SceneManager.LoadScene("Level 2 Prefix");
+            } else if(currentLevel == 3){
+                SceneManager.LoadScene("Level 3 Prefix");
+            } else if(currentLevel == 4) {
+                SceneManager.LoadScene("Level 4 Prefix");
+            } else if(currentLevel == 5) {
+                SceneManager.LoadScene("Finale");
+            }
+        }
+        if(timer.currentTime <= 0) {
+            currentLevel = 1;
+            SceneManager.LoadScene("Game Over");
         }
     }
 
