@@ -11,10 +11,6 @@ public class GameManager : MonoBehaviour
 
     public TimerObject timer;
 
-    public static int currentLevel = 1;
-
-    public int test;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -24,22 +20,10 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        test = currentLevel;
         if(objectList.Count <= 0) {
-            currentLevel += 1;
-            Debug.Log("Yippee");
-            if(currentLevel == 2){
-                SceneManager.LoadScene("Level 2 Prefix");
-            } else if(currentLevel == 3){
-                SceneManager.LoadScene("Level 3 Prefix");
-            } else if(currentLevel == 4) {
-                SceneManager.LoadScene("Level 4 Prefix");
-            } else if(currentLevel == 5) {
-                SceneManager.LoadScene("Finale");
-            }
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
         if(timer.currentTime <= 0) {
-            currentLevel = 1;
             SceneManager.LoadScene("Game Over");
         }
     }
