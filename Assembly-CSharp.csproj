@@ -96,6 +96,8 @@
     <Compile Include="Assets/Scripts/changeCursor.cs" />
     <Compile Include="Assets/Scripts/followCursor.cs" />
     <Compile Include="Assets/Scripts/Persist.cs" />
+    <Compile Include="Assets/Scripts/GunShotOnClick.cs" />
+    <Compile Include="Assets/Scripts/changeCursorBack.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
