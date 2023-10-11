@@ -95,6 +95,7 @@
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01.cs" />
     <Compile Include="Assets/Scripts/changeCursor.cs" />
     <Compile Include="Assets/Scripts/followCursor.cs" />
+    <Compile Include="Assets/Scripts/Persist.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
