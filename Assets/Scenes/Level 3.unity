@@ -1356,6 +1356,7 @@ GameObject:
   - component: {fileID: 1172311784}
   - component: {fileID: 1172311786}
   - component: {fileID: 1172311785}
+  - component: {fileID: 1172311787}
   m_Layer: 5
   m_Name: Noise Meter
   m_TagString: Untagged
@@ -1402,6 +1403,8 @@ MonoBehaviour:
   deltaX: 0
   deltaY: 0
   displacement: 0
+  slider: {fileID: 0}
+  sliderValue: 0
 --- !u!114 &1172311786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1453,6 +1456,25 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1172311787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1172311783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96454621bc5584a84af061fedd919f26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prevMouse: {x: 0, y: 0, z: 0}
+  currMouse: {x: 0, y: 0, z: 0}
+  deltaX: 0
+  deltaY: 0
+  displacement: 0
+  slider: {fileID: 0}
+  sliderValue: 0
 --- !u!1 &1174677806
 GameObject:
   m_ObjectHideFlags: 0
@@ -2250,6 +2272,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5483251138359893007, guid: c128bbe065e0beb40a477e89f5173b44, type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1172311786}
     - target: {fileID: 9081868388726736845, guid: c128bbe065e0beb40a477e89f5173b44, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -2295,6 +2321,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9081868388726736846, guid: c128bbe065e0beb40a477e89f5173b44, type: 3}
+      propertyPath: noise
+      value: 
+      objectReference: {fileID: 1172311785}
+    - target: {fileID: 9081868388726736846, guid: c128bbe065e0beb40a477e89f5173b44, type: 3}
       propertyPath: timer
       value: 
       objectReference: {fileID: 1883555558}
@@ -2326,5 +2356,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2074086305481745001, guid: c128bbe065e0beb40a477e89f5173b44, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c128bbe065e0beb40a477e89f5173b44, type: 3}
