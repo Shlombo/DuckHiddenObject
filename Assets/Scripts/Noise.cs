@@ -33,11 +33,11 @@ public class Noise : MonoBehaviour
             displacement = Mathf.Sqrt(Mathf.Pow(deltaX, 2) + Mathf.Pow(deltaY, 2));
         
             if (slider.value < displacement && displacement > 5.0f)
-                slider.value += 4.0f * Time.deltaTime;
-            else if (slider.value < displacement)
                 slider.value += 2.0f * Time.deltaTime;
+            else if (slider.value < displacement)
+                slider.value += 1.0f * Time.deltaTime;
             else
-                slider.value -= 1.0f * Time.deltaTime;
+                slider.value -= 0.5f * Time.deltaTime;
         }
         sliderValue = slider.value;
     }
