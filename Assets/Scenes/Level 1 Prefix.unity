@@ -347,9 +347,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: After narrowly escaping the Geese Family's cherry bombs, you decide to
-    take matters into your own hands and infiltrate the Geese headquarters. You sneak
-    into the Goosefather's office to see if you can learn any idea of their next
-    plans.
+    take matters into your own hands and infiltrate the Geese headquarters. You find
+    yourself by a shed at the edge of the farm, careful not to wake the geese up!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
