@@ -1402,6 +1402,8 @@ MonoBehaviour:
   deltaX: 0
   deltaY: 0
   displacement: 0
+  slider: {fileID: 0}
+  sliderValue: 0
 --- !u!114 &1172311786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2294,6 +2296,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9081868388726736846, guid: c128bbe065e0beb40a477e89f5173b44, type: 3}
+      propertyPath: noise
+      value: 
+      objectReference: {fileID: 1172311785}
     - target: {fileID: 9081868388726736846, guid: c128bbe065e0beb40a477e89f5173b44, type: 3}
       propertyPath: timer
       value: 
