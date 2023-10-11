@@ -11,7 +11,8 @@ public class Noise : MonoBehaviour
     public float deltaY;
     public float displacement;
 
-    private Slider slider;
+    public Slider slider;
+    public float sliderValue = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -38,5 +39,6 @@ public class Noise : MonoBehaviour
             else
                 slider.value -= 1.0f * Time.deltaTime;
         }
+        sliderValue = slider.value;
     }
 }
